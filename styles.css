@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px black solid;
+    width: 55vmin; 
+    height: 80vmin;    
+    
+}
+.painel{
+    border: 2px gray solid;
+    width:45vmin; 
+    height: 10vmin;
+    margin-bottom: 5vmin;
+    margin-top: 5vmin;
+    text-align: end;
+    font-size: 6vmin;
+}
+.teclado{
+    display: flex;
+    border: 2px gray solid;
+    width: 45vmin; 
+    height: 50vmin;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vmin;
+    flex-wrap: wrap;
+}
+button{
+    flex-grow: 1;
+    width: 13vmin;
+    height: 5vmin;
+    margin: 1vmin;
+}
