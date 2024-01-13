@@ -22,9 +22,9 @@ let subtracao = document.querySelector('.subtracao')
 let multiplicacao = document.querySelector('.multiplicacao')
 let divisao = document.querySelector('.divisao')
 
-let textoConta = '6+1-2*3/4/'
+let textoConta = ''
 
-let conta = '6 + 1 - 2 * 3 / 4 / '
+let conta = ''
 teclado.addEventListener('click',()=>{
     painel.textContent = textoConta
     console.log(conta)
@@ -214,7 +214,7 @@ function calculate (conta){
     );
     console.log('fim')
     console.log(calculo)
-    return calculo[0]
+    return Number(calculo[0]).toFixed(10)
 }
 
 

@@ -14,6 +14,7 @@ body {
     border: 2px black solid;
     width: 55vmin; 
     height: 80vmin;    
+    background-color: grey;
     
 }
 .painel{
@@ -24,6 +25,9 @@ body {
     margin-top: 5vmin;
     text-align: end;
     font-size: 6vmin;
+    background-color: bisque;
+    border: 2px black solid;
+    font-weight: 900;
 }
 .teclado{
     display: flex;
@@ -34,10 +38,39 @@ body {
     align-items: center;
     margin-bottom: 5vmin;
     flex-wrap: wrap;
+    background-color: cadetblue;
+    border: 2px black solid;
 }
 button{
+    border: 2px black solid;
     flex-grow: 1;
     width: 13vmin;
     height: 5vmin;
     margin: 1vmin;
+    font-size: large;
+    font-weight: 900;
+}
+.clear{
+    background-color: red;
+}
+.delete{
+    background-color: purple;
+}
+.ponto{
+    background-color: lightcoral;
+}
+.igual{
+    background-color: green;
+}
+.soma{
+    background-color: orange;
+}
+.divisao{
+    background-color: orange;
+}
+.subtracao{
+    background-color: orange;
+}
+.multiplicacao{
+    background-color: orange;
 }
