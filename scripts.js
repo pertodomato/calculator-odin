@@ -217,5 +217,5 @@ function calculate (conta){
     return calculo[0]
 }
 
-alert(isLastANum(textoConta))
+
 
