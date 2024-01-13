@@ -155,7 +155,7 @@ igual.addEventListener('click',()=>{
         textoConta = textoConta.substring(0,textoConta.length-1)
         conta = conta.substring(0,conta.length-3)
     }
-    textoConta = calculate(conta)
+    textoConta = `${calculate(conta)}`
     conta = textoConta
 })
 
@@ -214,8 +214,17 @@ function calculate (conta){
     );
     console.log('fim')
     console.log(calculo)
-    return Number(calculo[0]).toFixed(10)
+    return round(Number(calculo[0]),10)
 }
 
+function round(number, decimalPlaces) {
+    const decimalPart = (number.toString().split('.')[1] || '').length;
+    
+    if (decimalPart >= decimalPlaces) {
+      return parseFloat(number.toFixed(decimalPlaces));
+    } else {
+      return number;
+    }
+  }
 
 
